@@ -6,41 +6,46 @@
 # a = int(input('Enter Day: '))
 # if a == 6 or a == 7:
 #     print ('Day off')
-# elif a == 1 or a == 2 or a == 3 or a == 4 or a == 5:
+# elif a == 1 or a == 2 or a == 3 or a == 4 or a == 5:      #----Complite
 #     print ('Weekday')
 # else:
 #     print ('none')
+############################
 
 # 2. Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
-f = False
-t = True
-x = (t, f, f)
-y = (t, f, t)
-z = (f, f, t)
-i = 0
-for i in range (3):
-    a = not(x[i] or y[i] or z[i])
-    b = not x[i] and not y[i] and not z[i]
-    if a==b:
-        print (True)
-    i += 1
+# f = False
+# t = True
+# x = (t, f, f)
+# y = (t, f, t)
+# z = (f, f, t)
+# i = 0
+# for i in range (3):
+#     a = not(x[i] or y[i] or z[i])
+#     b = not x[i] and not y[i] and not z[i]                #----Complite
+#     if a==b:
+#         print (True)
+#     i += 1
+##############################
 
-
-
-# not (1 or 0 or 1) == != 0 and not 0 and not 1
-# item = 0
-# for 
-# c = not x 
-# print (x)
-# print (y)
-# print (z)
-# print (a)
 # 3. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
 #     *Пример:*
-    
 #     - x=34; y=-30 -> 4
 #     - x=2; y=4-> 1
 #     - x=-34; y=-30 -> 3
+
+# x = int(input('Enter x: '))
+# y = int(input('Enter y: '))
+# if x == 0 or y == 0:
+#     print ('Координаты не могутбыть 0')                      #----Complite
+# elif x > 0 and y > 0:
+#     print ('1')
+# elif x > 0 and y <0:
+#     print ('4')
+# elif x < 0 and y > 0:
+#     print ('2')
+# else:
+#     print ('3')
+#######################
 # 4. Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
 # 5. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 #     *Пример:*
