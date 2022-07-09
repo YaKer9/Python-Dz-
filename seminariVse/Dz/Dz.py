@@ -7,10 +7,11 @@
 
                                                             #----Complite
 
-# a = int(input('Enter Day: '))
-# if a == 6 or a == 7:
+# days_of_the_week = int(input('Enter Day: '))
+# if days_of_the_week == 6 or days_of_the_week == 7:
 #     print ('Day off')
-# elif a == 1 or a == 2 or a == 3 or a == 4 or a == 5:      
+# #elif days_of_the_week == 1 or days_of_the_week == 2 or days_of_the_week == 3 or days_of_the_week == 4 or days_of_the_week == 5: 
+# elif days_of_the_week in range (1, 5):
 #     print ('Weekday')
 # else:
 #     print ('none')
@@ -28,9 +29,9 @@
 # z = (f, f, t)
 # i = 0
 # for i in range (3):
-#     a = not(x[i] or y[i] or z[i])
-#     b = not x[i] and not y[i] and not z[i]                
-#     if a==b:
+#     first_part = not(x[i] or y[i] or z[i])
+#     second_part = not x[i] and not y[i] and not z[i]                
+#     if first_part==second_part:
 #         print (True)
 #     i += 1
 ##############################
@@ -82,18 +83,18 @@
 #     - A (3,6); B (2,1) -> 5,09
 #     - A (7,-5); B (1,-1) -> 7,21
                                                                 #-------Comlite
-# import math       
-Ax = int (input('Введите X для первой точки: '))
-Ay = int (input('Введите y для первой точки: '))
-Bx = int (input('Введите X для второй точки: '))
-By = int (input('Введите y для второй точки: '))
-first_coordinate = (Ax, Ay)
-second_coordinate = (Bx, By)
-# # print (first_coordinate)
-# # print (second_coordinate)
-# AB = √(xb - xa)^2 + (yb - ya)^2
-# distance = math.sqrt((Bx - Ax) ** 2 + (By - Ay) ** 2)
-distance =((Bx - Ax) ** 2 + (By - Ay) ** 2)**0.5
-print ('для: ', 'A', first_coordinate, 'B', second_coordinate, 'Расстояние между точками --> ', distance)
+# # import math       
+# Ax = int (input('Введите X для первой точки: '))
+# Ay = int (input('Введите y для первой точки: '))
+# Bx = int (input('Введите X для второй точки: '))
+# By = int (input('Введите y для второй точки: '))
+# first_coordinate = (Ax, Ay)
+# second_coordinate = (Bx, By)
+# # # print (first_coordinate)
+# # # print (second_coordinate)
+# # AB = √(xb - xa)^2 + (yb - ya)^2
+# # distance = math.sqrt((Bx - Ax) ** 2 + (By - Ay) ** 2)
+# distance =((Bx - Ax) ** 2 + (By - Ay) ** 2)**0.5
+# print ('для: ', 'A', first_coordinate, 'B', second_coordinate, 'Расстояние между точками --> ', distance)
 
 #пока самые очевидные решения применил)
