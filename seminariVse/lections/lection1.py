@@ -142,14 +142,14 @@
 # colors.remove('red')               #del colors[0] #удалить элемент
 # print (colors)
 
-# def f(x):
-#     if(x)  == 1:
-#         return 'целое'
-#     elif x == 2.3:
-#         return 23
-#     else:
-#         return
-# arg = 1
-# print(f(arg))
-# print(type(f(arg)))
+def f(x):
+    if(x)  == 1:
+        return 'целое'
+    elif x == 2.3:
+        return 23
+    else:
+        return
+arg = 1
+print(f(arg))
+print(type(f(arg)))
  
