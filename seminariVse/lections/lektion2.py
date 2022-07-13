@@ -153,11 +153,11 @@
 #  .difference(a.intersection(b))
 #                                      # {1, 21, 3, 13}
 
-list[1,2,3,4,5]
-list2 = list1
-for e in list1:
-    print(e)
-print()
-for e in list2:
-    print(e)
+# list[1,2,3,4,5]
+# list2 = list1
+# for e in list1:
+#     print(e)
+# print()
+# for e in list2:
+#     print(e)
     
