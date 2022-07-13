@@ -4,6 +4,31 @@
 # *Пример:*
 # - 6782 -> 23
 # - 0,56 -> 11
+
+# number = float(input('Enter the number: '))
+# sum = 0
+# while number > 0:
+#     digit = number % 10
+#     sum = sum + digit
+#     number = number //10
+# print (sum)
+import functools
+import math
+# number = list(input())
+# suma = 0
+# # mult = 1
+# for digit in number:
+#     suma += int(digit)
+#     # mult *= int(digit)
+# print("Сумма:", suma)
+
+number = list(input())
+number = [int(digit) for digit in number]
+ 
+suma = sum(number)
+print('Summa: ', suma)
+
+
 # from asyncio.windows_events import NULL
 
 
