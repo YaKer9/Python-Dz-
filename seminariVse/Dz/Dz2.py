@@ -12,8 +12,8 @@
 #     sum = sum + digit
 #     number = number //10
 # print (sum)
-import functools
-import math
+# import functools
+# import math
 # number = list(input())
 # suma = 0
 # # mult = 1
@@ -22,12 +22,25 @@ import math
 #     # mult *= int(digit)
 # print("Сумма:", suma)
 
-number = list(input())
-number = [int(digit) for digit in number]
+# number = list(input())
+# number = [int(digit) for digit in number]
  
-suma = sum(number)
-print('Summa: ', suma)
+# suma = sum(number)
+# print('Summa: ', suma)
 
+num = input("Введите дробное: ")
+# разделим введённое (тип данных строка) на две части
+x = num.split(".") 
+a = int(x[0]) # целая часть
+b = int(x[1]) # дробная часть
+summ = 0
+while (a != 0): # перемножаем числа целой части
+    summ = summ + (a % 10)
+    a = a // 10
+while (b != 0): # перемножаем числа дробной части
+    summ = summ + (b % 10)
+    b = b // 10
+print("Сумма цифр равно:", summ)
 
 # from asyncio.windows_events import NULL
 
