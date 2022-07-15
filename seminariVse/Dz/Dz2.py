@@ -5,8 +5,13 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-# number = float(input('Enter the number: '))
-# sum = 0
+str_float_number = input('Enter the number: ')
+summa = 0
+for char in str_float_number:
+    if char.isdigit():
+        summa +=char
+print (summa)
+
 # while number > 0:
 #     digit = number % 10
 #     sum = sum + digit
@@ -16,31 +21,29 @@
 # import math
 # number = list(input())
 # suma = 0
-# # mult = 1
 # for digit in number:
 #     suma += int(digit)
-#     # mult *= int(digit)
 # print("Сумма:", suma)
+
 
 # number = list(input())
 # number = [int(digit) for digit in number]
- 
 # suma = sum(number)
 # print('Summa: ', suma)
 
-num = input("Введите дробное: ")
-# разделим введённое (тип данных строка) на две части
-x = num.split(".") 
-a = int(x[0]) # целая часть
-b = int(x[1]) # дробная часть
-summ = 0
-while (a != 0): # перемножаем числа целой части
-    summ = summ + (a % 10)
-    a = a // 10
-while (b != 0): # перемножаем числа дробной части
-    summ = summ + (b % 10)
-    b = b // 10
-print("Сумма цифр равно:", summ)
+# num = input("Введите дробное: ")
+# # разделим введённое (тип данных строка) на две части
+# x = num.split(".") 
+# a = int(x[0]) # целая часть
+# b = int(x[1]) # дробная часть
+# summ = 0
+# while (a != 0): # перемножаем числа целой части
+#     summ = summ + (a % 10)
+#     a = a // 10
+# while (b != 0): # перемножаем числа дробной части
+#     summ = summ + (b % 10)
+#     b = b // 10
+# print("Сумма цифр равно:", summ)
 
 # from asyncio.windows_events import NULL
 
@@ -127,3 +130,11 @@ print("Сумма цифр равно:", summ)
 # 4 - Реализуйте выдачу случайного числа (или алгоритм перемешивания списка)
 # не использовать random.randint и вообще библиотеку random
 # Можете использовать xor, биты, библиотеку time (миллисекунды или наносекунды) - для задания случайности
+
+ 
+################
+
+# ^
+# <<                ##--побитовый сдвиг
+# >>
+
