@@ -15,4 +15,5 @@ def input_numbers_text_float(text):
             if is_minus:
                 coord *= -1
             int_test = False
-    elif coord.isdecimal
+        elif coord.isdecimal():
+            
