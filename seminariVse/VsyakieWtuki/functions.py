@@ -1,14 +1,10 @@
-from curses.ascii import isdigit
-from operator import is_
 
-f=12
-f.isdecimal
 
-def input_numbers_text_float(text):
+def input_numbers_text_float(text): #Проверка на число
     int_test = True
     is_minus = False
     while int_test:
-        coord = input(f'{test}')
+        coord = input(f'{text}')
         if coord[0] == '-':
             is_minus = True
             coord = coord.replace('-', '')
