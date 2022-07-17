@@ -4,15 +4,20 @@
 
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-12          #Вводим числа без пробелов для заполнения строки
-odd_list_ok = list_ok[1::2]                 #  заносим нечетные элементы в отдельную строку(list_ok[1::2] - list_ok[START:STOP:STEP]
-                                            #  - берёт срез от номера START, до STOP (не включая его),с шагом STEP.
-                                            #  По умолчанию START = 0, STOP = длине объекта, STEP = 1)
-print (f'all odd elements in enter numbers {odd_list_ok}')  #выводим на экран нечетные числа
-ints=[]
-for element in odd_list_ok:                 #тут мы переводим строку из ['2', '4'] В лист [2, 4]
-    ints.append(int(element))
-print(f'convert elements to list: {ints}')  #выводим лист с нечетными элементами
-print("sum of odd elements: ", sum(ints))   #выводим сумму элементов нашего листа(тутже и складываем в принте)
+print("Введите элементы последовательности: ")      
+num_list = list(map(str, input()))        
+print(num_list)
+string_num=[]
+for element in num_list:                 #тут мы переводим строку из ['2', '4'] В лист [2, 4]
+    string_num.append(int(element))
+print(string_num)                        #выводим лист какой нам нужен
+# rev_string_num = string_num[::-1]      #тут я создавал перевернутую строку, но вроде она ненужна оказалась
+# print(rev_string_num)
+sum_different_sides= []  
 
-#правда без всяких проверок))
+for i in range(1, len(string_num)):      
+    sum_different_sides.append(string_num[(i-1)]*string_num[(-1*i)])
+print(sum_different_sides)               #тут перемножаю поиндексно с 1го по последний элементы с -1 по -последний
+                                         #двигаюсь с краев к другим краям и друг на друга перемножаю(а надо как то к центру =(
+                                         # а то они начинают дублироваться)
+
