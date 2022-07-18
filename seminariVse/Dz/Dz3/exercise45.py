@@ -12,13 +12,13 @@ def fibonacci(n):
         return (fibonacci(n-1) + fibonacci(n-2))
 n = int(input("Введите число членов последовательности:"))
 print("Последовательность Фибоначчи:")
-a=[]
+new_lst=[]
 for i in range(n):
     # print(fibonacci(i))
-    a.append(fibonacci(i))
-print(a)
+    new_lst.append(fibonacci(i))
+print(new_lst)
 neg_liston =[]
-my_liston = a
+my_liston = new_lst
 for i in range(1, len(my_liston)):
     neg_liston.append(my_liston[i]*((-1)**(i+1)))
 
