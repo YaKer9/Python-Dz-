@@ -100,7 +100,7 @@
 # for i in list:
 #     print(i)
 
-# list = range(10)  -   0-10 range  -   cicle for
+# list = range(10) # -   0-10 range  -   cicle for
 # for i in range (1, 10, 2):
 #     print(i)
 # for i in 'qwe - rty':
@@ -142,14 +142,54 @@
 # colors.remove('red')               #del colors[0] #удалить элемент
 # print (colors)
 
-def f(x):
-    if(x)  == 1:
-        return 'целое'
-    elif x == 2.3:
-        return 23
-    else:
-        return
-arg = 1
-print(f(arg))
-print(type(f(arg)))
+# def f(x):
+#     if(x)  == 1:
+#         return 'целое'
+#     elif x == 2.3:
+#         return 23
+#     else:
+#         return x
+# arg = 1
+# print(f(arg))
+# print(type(f(arg)))
  
+# def num_biger_then_zero(text):
+
+#     int_num = True
+#     while int_num:
+#         n = input(f"{text}")
+#         if n.isdigit():
+#             n = int(n)
+#             if n <= 0:
+#                 print("Введите число > 0")
+#             else:
+#                 int_num = False
+#         else :
+#             print("Не число, попробуйте еще раз")
+#     return n
+
+# def num_biger_then_zero(text):
+
+
+#От Liza Tuzhilkina всем 01:31 PM
+
+
+# def num_biger_then_zero(text):
+
+#     int_num = True
+#     while int_num:
+#         n = input(f"{text}")
+#         if n.isdigit():
+#             n = int(n)
+#             if n <= 0:
+#                 print("Введите число > 0")
+#             else:
+#                 int_num = False
+#         else :
+#             print("Не число, попробуйте еще раз")
+#     return n
+# n = num_biger_then_zero("Введите n : ") 
+# list = [1]
+# for i in range(1, n):
+#     list.append(list[i-1] * (i+1)) # [0] - 1 , 2 * (2 + 1) = 6, 6 * 4 = 24
+# print(f'Результат: {list}')
