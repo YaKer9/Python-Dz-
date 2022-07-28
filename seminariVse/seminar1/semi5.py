@@ -33,3 +33,25 @@
 #     file.write(result)
 
 #############################
+
+
+
+# Написать программу вычисления арифметического выражения заданного строкой. Используются операции +,-,/,*.
+# приоритет операций стандартный. Пример: 2+2 => 4; 1+2*3 => 7; 1-2*3 => -5
+# 10/2 * 5
+
+
+
+
+expression = '12+2'
+expression1 = []
+for i in expression.split('+'):
+    expression1.append(i)
+operator = []
+digits = []
+for i, char in enumerate(expression1):
+    if char in '-+*/' :
+        operator.append(char)
+    elif char.isdigit():
+        digits.append(char)
+print(operator, digits)
