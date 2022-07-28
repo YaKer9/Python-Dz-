@@ -115,7 +115,7 @@
 ##############
 
 # data  = list(map(int, '1 2 3 4 43 22'.split()))  #kak rabotaet map
-
+# print(data)
 # for e in data:
 #     print(e*10)
 

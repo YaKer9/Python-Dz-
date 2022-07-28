@@ -36,3 +36,7 @@ def encode(string):
  
     return encoding
 print(encode(string))
+
+file = open('result.txt' , "w",encoding='utf-8') #записыаем и создаем файл
+file.write(encode(string))
+file.close()
